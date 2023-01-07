@@ -22,7 +22,7 @@ features:
   - title: Whitelist access control
     details: Only App that is granted root permission can access `su`, other apps cannot perceive su.
   - title: Module support
-    details: coming soon.
+    details: KernelSU supports modify /system systemlessly by overlayfs, it can even make system writable.
   - title: Open source
     details: KernelSU is a open source project under GPL-3 License.
 

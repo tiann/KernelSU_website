@@ -10,17 +10,19 @@ Then install KernelSU manager App to your device and open it, if it shows `Unsup
 
 Certainly, yes.
 
-## Will KernelSU support modules?
+## Does KernelSU support modules?
 
-Yes. We are working on it!
+Yes, But it is in early version, may be buggy. Please waiting it to be stable :)
 
 ## Does KernelSU support Xposed?
 
-Yes. It is WIP.
+Yes, [Dreamland](https://github.com/canyie/Dreamland) and [TaiChi](https::/taichi.cool) partially works now, And we are trying to make other Xposed Framework work.
 
 ## Is KernelSU compatible with Magisk?
 
-Yes. KernelSU modify the `kernel` and Magisk modify the `ramdisk`, they can work together.
+KernelSU's module system is conflict with Magisk's magic mount, if there is any module enabled in KernelSU, then the whole Magisk would not work.
+
+But if you only use the `su` of KernelSU, then it will work well with Magisk: KernelSU modify the `kernel` and Magisk modify the `ramdisk`, they can work together.
 
 ## Will KernelSU substitute Magisk?
 
@@ -29,3 +31,7 @@ We don't think so and it's not our goal. Magisk is good enough for userspace roo
 ## Can KernelSU support non GKI devices?
 
 It is possible. But you should download the kernel source and intergrate KernelSU to the source tree and compile the kernel yourself.
+
+## Can KernelSU support old kernel?
+
+It is possible, but you need to backport it manully and PRs welcome!
